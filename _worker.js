@@ -299,7 +299,7 @@ export default {
 					"Subscription-Userinfo": `upload=${UD}; download=${UD}; total=${total}; expire=${expire}`,
 				},
 			});
-		} else if (userAgent.includes('singbox') || userAgent.includes('sing-box')){
+		} else if (userAgent.includes('singbox') || userAgent.includes('sing-box') || userAgentHeader == 'v2rayng'){
 			const 输出结果 = await SUBAPI('singbox',request);
 			return new Response(`${输出结果}`, {
 				headers: { 
