@@ -461,7 +461,7 @@ async function clash(优选IP数组,私钥,公钥,MTU,ipv4,ipv6) {
 		}
 
 		const wireguardLink = `
-- ip: ${ipv4}
+- ip: ${ipv4.match(/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/)[0]}
   mtu: ${MTU}
   name: ${id}${EndPS}
   port: ${port}
