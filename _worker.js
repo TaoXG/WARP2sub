@@ -217,6 +217,7 @@ export default {
 		if (env.ADD) addresses = await ADD(env.ADD);
 		if (env.ADDAPI) addressesapi = await ADD(env.ADDAPI);
 		if (env.ADDCSV) addressescsv = await ADD(env.ADDCSV);
+		DELAY = env.DELAY || DELAY;
 
 		let UD = Math.floor(((timestamp - Date.now())/timestamp * 99 * 1099511627776 * 1024)/2);
 		total = total * 1099511627776 * 1024;
