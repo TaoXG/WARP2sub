@@ -6,7 +6,19 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 // 设置优选地址，不带端口号默认987
 let addresses = [
 	//'engage.cloudflareclient.com:2408#WAPR官方直连',
-	//'162.159.195.128:987#WARP',
+	'162.159.195.128:987#WARP',
+	'188.114.97.60:8854#WARP',
+	'188.114.97.239:4500#WARP',
+	'162.159.195.193:8854#WARP',
+	'188.114.97.108:8854#WARP',
+	'188.114.96.107:8854#WARP',
+	'188.114.97.49:4500#WARP',
+	'188.114.96.196:4500#WARP',
+	'188.114.99.234:8854#WARP',
+	'188.114.97.206:4500#WARP',
+	'188.114.96.129:8854#WARP',
+	'188.114.99.46:8854#WARP',
+	'188.114.98.147:4500#WARP',
 ];
 
 // 设置优选地址api接口
@@ -16,7 +28,7 @@ let addressesapi = [
 
 let DELAY = 180;//延迟上限
 let addressescsv = [
-	'https://raw.githubusercontent.com/cmliu/WARP2sub/main/result.csv', //warp-yxip测速结果文件。
+	//'https://raw.githubusercontent.com/cmliu/WARP2sub/main/result.csv', //warp-yxip测速结果文件。
 ];
 
 let subconverter = "apiurl.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
